@@ -23,7 +23,7 @@ const Home = () => {
             </button>
             </Link>
             <a href="cv.pdf" download="cv.pdf">
-            <button class=""><i class="fa fa-download"></i> Download CV</button>
+            <button class="text-pink-600 hover:text-black"><i class="fa fa-download"></i> Download CV</button>
             </a>
             
           </div>
