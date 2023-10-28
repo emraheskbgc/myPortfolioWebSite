@@ -1,0 +1,28 @@
+[
+    {
+        "name":"HTML",
+        "path":"assets/html.png"
+    },
+    {
+        "name":"CSS",
+        "path":"assets/css.png"
+    },
+    {
+        "name":"GITHUB",
+        "path":"assets/github.png"
+    },
+    {
+        "name":"JAVASCRIPT",
+        "path":"assets/javascript.png"
+    },
+    {
+        "name":"REACT",
+        "path":"assets/react.png"
+    },
+    {
+        "name":"TAILWIND",
+        "path":"assets/tailwind.png"
+    }
+
+]
+    
