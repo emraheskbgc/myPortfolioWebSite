@@ -13,10 +13,13 @@ const Navbar = () => {
     <div className='fixed w-full h-[70px] flex justify-between items-center px-4 bg-[#0a192f] text-gray-300 '>
         {/* LOGO  */}
         <div >
-            <img src="assets/logo1.jpg" alt=""  className='rounded-full'style={{width:"60px", height:"60px"}} />
+            <img src="assets/darklogo.jpg" alt=""  className='rounded-full'style={{width:"60px", height:"60px"}} />
         </div>
         {/* MENU */}
         <ul className='hidden md:flex'>
+        <div >
+        <i class="fa-regular fa-sun fa-sm"></i>adas
+    </div>
           {
             navData.map((navItem, index)=> (
                 <li className='hover:text-lg hover:text-pink-600'>
