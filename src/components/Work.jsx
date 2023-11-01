@@ -19,7 +19,7 @@ const Work = () => {
 
             workData.map((work, index) => (
 
-              <div style={{ background: `url(${work.path})`, backgroundSize: "cover" }} className=' shadow-lg shadow-[#040c16] group container rounded-md flex  justify-center  items-center mx-auto   content-div  '>
+              <div key={index} style={{ background: `url(${work.path})`, backgroundSize: "cover" }} className=' shadow-lg shadow-[#040c16] group container rounded-md flex  justify-center  items-center mx-auto   content-div  '>
 
 
 

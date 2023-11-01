@@ -4,16 +4,21 @@ import About from "./components/About";
 import Skills from "./components/Skills";
 import Work from "./components/Work";
 import Contact from "./components/Contact";
+import { useState } from "react";
 
 function App() {
+  const [isAtcive, setIsActive] = useState(true);
+  const changeColor = () => {
+    console.log("asdas");
+    setIsActive(!isAtcive);
+  };
   return (
     <div>
-      <Navbar />
-      <Home />
+      <Navbar isAtcive={isAtcive} changeColor={changeColor} />
+      <Home isAtcive={isAtcive} changeColor={changeColor} />
       <About />
       <Skills />
       <Work />
-      <div className="h-[100px] bg-[#0a192f]"></div>
       <Contact />
     </div>
   );
