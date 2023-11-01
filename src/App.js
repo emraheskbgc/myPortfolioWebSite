@@ -4,22 +4,38 @@ import About from "./components/About";
 import Skills from "./components/Skills";
 import Work from "./components/Work";
 import Contact from "./components/Contact";
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import Load from "./load/Load";
 
 function App() {
   const [isAtcive, setIsActive] = useState(true);
   const changeColor = () => {
-    console.log("asdas");
     setIsActive(!isAtcive);
   };
+  const light = `${
+    isAtcive ? "bg-[#0a192f] text-gray-300" : "bg-gray-200 text-[#0a192f]"
+  }`;
+
+  const [isLoading, setIsLoading] = useState(true);
+  useEffect(() => {
+    setTimeout(() => {
+      setIsLoading(false);
+    }, 1900);
+  }, []);
   return (
     <div>
-      <Navbar isAtcive={isAtcive} changeColor={changeColor} />
-      <Home isAtcive={isAtcive} changeColor={changeColor} />
-      <About />
-      <Skills />
-      <Work />
-      <Contact />
+      {isLoading ? (
+        <Load />
+      ) : (
+        <>
+          <Navbar isAtcive={isAtcive} changeColor={changeColor} light={light} />
+          <Home isAtcive={isAtcive} light={light} />
+          <About light={light} />
+          <Skills isAtcive={isAtcive} light={light} />
+          <Work light={light} />
+          <Contact light={light} />
+        </>
+      )}
     </div>
   );
 }

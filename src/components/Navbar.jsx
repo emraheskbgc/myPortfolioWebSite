@@ -10,11 +10,7 @@ const Navbar = (props) => {
   const handleClick = () => setNav(!nav);
   return (
     <div
-      className={`fixed w-full h-[70px] flex justify-between items-center px-4 ${
-        props.isAtcive
-          ? "bg-[#0a192f] text-gray-300"
-          : "bg-gray-200 text-[#0a192f]"
-      }  `}
+      className={`fixed w-full h-[70px] flex justify-between items-center px-4 ${props.light}  `}
     >
       {/* LOGO  */}
       <div>
@@ -91,7 +87,7 @@ const Navbar = (props) => {
               <a
                 href={socials.path}
                 target="_blank"
-                className="flex items-center justify-between w-full font-bold "
+                className="flex items-center justify-between w-full font-bold text-gray-300"
               >
                 {socials.name}{" "}
                 <img src={socials.icon} className="w-[30px]" alt="" />

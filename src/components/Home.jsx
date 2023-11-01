@@ -6,11 +6,7 @@ const Home = (props) => {
   return (
     <div
       name="home"
-      className={`${
-        props.isAtcive
-          ? "bg-[#0a192f] text-white"
-          : "bg-gray-200 text-[#0a192f]"
-      }  w-full h-screen  flex flex-row`}
+      className={`${props.light}  w-full h-screen  flex flex-row`}
     >
       {/* Container  */}
 
