@@ -16,7 +16,7 @@ const Navbar = (props) => {
       <div>
         <img
           src={`${
-            props.isAtcive ? "assets/darklogo.jpg" : "assets/lightlogo.jpg"
+            props.isActive ? "assets/darklogo.jpg" : "assets/lightlogo.jpg"
           }`}
           alt=""
           className="rounded-full"
@@ -30,12 +30,12 @@ const Navbar = (props) => {
           alt="dark thema"
           style={{ width: "40px" }}
           onClick={props.changeColor}
-          className={`cursor-pointer ${props.isAtcive ? "" : "hidden"}`}
+          className={`cursor-pointer ${props.isActive ? "" : "hidden"}`}
         />
         <img
           src="assets/soon.png"
           onClick={props.changeColor}
-          className={`cursor-pointer ${props.isAtcive ? "hidden" : ""}`}
+          className={`cursor-pointer ${props.isActive ? "hidden" : ""}`}
           alt="light thema"
           style={{ width: "35px" }}
         />

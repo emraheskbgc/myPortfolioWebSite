@@ -23,7 +23,7 @@ const Home = (props) => {
         </p>
         <div>
           <Link to="work" smooth={true} duration={500}>
-            <button className={props.isAtcive ? "fill" : "fall"}>
+            <button className={props.isActive ? "fill" : "fall"}>
               View Work
             </button>
           </Link>

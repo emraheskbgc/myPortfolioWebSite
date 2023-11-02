@@ -8,12 +8,12 @@ import { useEffect, useState } from "react";
 import Load from "./load/Load";
 
 function App() {
-  const [isAtcive, setIsActive] = useState(true);
+  const [isActive, setIsActive] = useState(true);
   const changeColor = () => {
-    setIsActive(!isAtcive);
+    setIsActive(!isActive);
   };
   const light = `${
-    isAtcive ? "bg-[#0a192f] text-gray-300" : "bg-gray-200 text-[#0a192f]"
+    isActive ? "bg-[#0a192f] text-gray-300" : "bg-gray-200 text-[#0a192f]"
   }`;
 
   const [isLoading, setIsLoading] = useState(true);
@@ -28,12 +28,12 @@ function App() {
         <Load />
       ) : (
         <>
-          <Navbar isAtcive={isAtcive} changeColor={changeColor} light={light} />
-          <Home isAtcive={isAtcive} light={light} />
+          <Navbar isActive={isActive} changeColor={changeColor} light={light} />
+          <Home isActive={isActive} light={light} />
           <About light={light} />
-          <Skills isAtcive={isAtcive} light={light} />
+          <Skills isActive={isActive} light={light} />
           <Work light={light} />
-          <Contact light={light} />
+          <Contact light={light} isActive={isActive} />
         </>
       )}
     </div>

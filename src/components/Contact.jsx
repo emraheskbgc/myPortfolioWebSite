@@ -1,6 +1,8 @@
 import React from "react";
 
 const Contact = (props) => {
+  const bgForm = `${props.isActive ? "bg-[#ccd6f6]" : "bg-orange-300"}`;
+  const bgButton = `${props.isActive ? "border-white" : "border-black"}`;
   return (
     <div
       name="contact"
@@ -27,22 +29,24 @@ const Contact = (props) => {
           type="text"
           placeholder="Name"
           name="name"
-          className=" p-2 bg-[#ccd6f6] text-[#0a192f]"
+          className={`p-2  text-[#0a192f] ${bgForm}`}
         />
         <input
           type="email"
           placeholder="Email"
           name="email"
-          className="my-4 p-2 bg-[#ccd6f6] text-[#0a192f]"
+          className={`p-2 my-2 text-[#0a192f] ${bgForm}`}
         />
         <textarea
           placeholder="Message"
           name="message"
           cols="30"
           rows="10"
-          className=" p-2 bg-[#ccd6f6] text-[#0a192f]"
+          className={`p-2  text-[#0a192f] ${bgForm}`}
         ></textarea>
-        <button className=" border-2 hover:bg-pink-600 hover:border-pink-600 px-4 py-3 my-8 mx-auto flex items-center rounded">
+        <button
+          className={`border-2 hover:bg-orange-300 hover:border-orange-300 px-4 py-3 my-8 mx-auto flex items-center rounded ${bgButton}`}
+        >
           SEND
         </button>
       </form>
