@@ -13,7 +13,7 @@ const Navbar = (props) => {
       className={`fixed w-full h-[70px] flex justify-between items-center px-4 ${props.light}  `}
     >
       {/* LOGO  */}
-      <div>
+      <div className="w3-animate-top">
         <img
           src={`${
             props.isActive ? "assets/darklogo.jpg" : "assets/lightlogo.jpg"
@@ -24,7 +24,7 @@ const Navbar = (props) => {
         />
       </div>
       {/* MENU */}
-      <ul className="hidden md:flex">
+      <ul className="hidden md:flex w3-animate-top">
         <img
           src="assets/sun.png"
           alt="dark thema"
@@ -74,7 +74,7 @@ const Navbar = (props) => {
       </ul>
       {/* Social icons  */}
 
-      <div className="hidden sm:flex fixed flex-col top-[35%] left-0">
+      <div className="hidden sm:flex fixed flex-col top-[35%] left-0 w3-animate-left ">
         <ul>
           {socaialData.map((socials, index) => (
             <li

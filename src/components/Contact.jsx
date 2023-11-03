@@ -2,7 +2,11 @@ import React from "react";
 
 const Contact = (props) => {
   const bgForm = `${props.isActive ? "bg-[#ccd6f6]" : "bg-orange-300"}`;
-  const bgButton = `${props.isActive ? "border-white" : "border-black"}`;
+  const bgButton = `${
+    props.isActive
+      ? "border-white hover:bg-pink-600 hover:border-pink-600"
+      : "border-black"
+  }`;
   return (
     <div
       name="contact"

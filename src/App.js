@@ -6,6 +6,7 @@ import Work from "./components/Work";
 import Contact from "./components/Contact";
 import { useEffect, useState } from "react";
 import Load from "./load/Load";
+import Footer from "./components/Footer";
 
 function App() {
   const [isActive, setIsActive] = useState(true);
@@ -23,21 +24,34 @@ function App() {
     }, 1900);
   }, []);
   return (
-    <div>
-      {isLoading ? (
-        <Load />
-      ) : (
-        <>
-          <Navbar isActive={isActive} changeColor={changeColor} light={light} />
-          <Home isActive={isActive} light={light} />
-          <About light={light} />
-          <Skills isActive={isActive} light={light} />
-          <Work light={light} />
-          <Contact light={light} isActive={isActive} />
-        </>
-      )}
-    </div>
+    <>
+      <Navbar isActive={isActive} changeColor={changeColor} light={light} />
+      <Home isActive={isActive} light={light} />
+      <About light={light} />
+      <Skills isActive={isActive} light={light} />
+      <Work light={light} />
+      <Contact light={light} isActive={isActive} />
+      <Footer light={light} />
+    </>
   );
 }
 
 export default App;
+
+{
+  /* <div>
+{isLoading ? (
+  <Load />
+) : (
+  <>
+    <Navbar isActive={isActive} changeColor={changeColor} light={light} />
+    <Home isActive={isActive} light={light} />
+    <About light={light} />
+    <Skills isActive={isActive} light={light} />
+    <Work light={light} />
+    <Contact light={light} isActive={isActive} />
+    <Footer light={light} />
+  </>
+)}
+</div> */
+}
