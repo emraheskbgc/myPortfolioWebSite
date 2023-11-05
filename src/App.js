@@ -9,6 +9,7 @@ import Load from "./load/Load";
 import Footer from "./components/Footer";
 
 function App() {
+  const [nav, setNav] = useState(false);
   const [isActive, setIsActive] = useState(true);
   const changeColor = () => {
     setIsActive(!isActive);
@@ -23,11 +24,39 @@ function App() {
       setIsLoading(false);
     }, 1900);
   }, []);
+
+  const [isAnimated, setIsAnimated] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollY = window.scrollY;
+      const threshold = 200; // Animasyonun başlaması için kaydırma eşiği
+
+      if (scrollY > threshold) {
+        setIsAnimated(true);
+      } else {
+        setIsAnimated(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
     <>
-      <Navbar isActive={isActive} changeColor={changeColor} light={light} />
+      <Navbar
+        isActive={isActive}
+        changeColor={changeColor}
+        light={light}
+        nav={nav}
+        setNav={setNav}
+      />
       <Home isActive={isActive} light={light} />
-      <About light={light} />
+      <About light={light} isAnimated={isAnimated} nav={nav} />
       <Skills isActive={isActive} light={light} />
       <Work light={light} />
       <Contact light={light} isActive={isActive} />

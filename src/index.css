@@ -28,7 +28,7 @@
     )!important;
 }
 .fill {
-    position: relative;
+   
     height: 45px;
     width: 130px;
     margin: 10px 32px;
@@ -45,36 +45,23 @@
     background: none;
     z-index: 1;
     cursor: pointer;
-    transition:         0.08s ease-in;
+    transition:0.08s ease-in;
    
   }
   .fill:hover{
     border:#EC4899;
+    background: #EC4899;
     color: black;
     font-weight: bold;
     font-size: 12px;
   }
   
-  .fill:before {
-    content: "";
-    position: absolute;
-    background: #EC4899;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    top: 100%;
-    z-index: -1;
-    -webkit-transition: top 0.20s ease-in;
-  }
-  
-  .fill:hover:before {
-    top: 0;
-  }
+
 
   /* isActive false durumlarda  */
 
   .fall {
-    position: relative;
+    
     height: 45px;
     width: 130px;
     margin: 10px 32px;
@@ -96,26 +83,12 @@
   }
   .fall:hover{
     border:#EC4899;
+    background: #EC4899;
     color: #ffff;
     font-weight: bold;
     font-size: 12px;
   }
-  
-  .fall:before {
-    content: "";
-    position: absolute;
-    background: #EC4899;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    top: 100%;
-    z-index: -1;
-    -webkit-transition: top 0.20s ease-in;
-  }
-  
-  .fall:hover:before {
-    top: 0;
-  }
+ 
 
   /* isACtive false durum sonu  */
 

@@ -1,0 +1,20 @@
+.animate {
+    animation: anime 1.5s ease-in;
+    
+   
+    
+  }
+.closeAnimated{
+  animation: none;
+}
+  @keyframes anime {
+    0%{
+        opacity: 0;
+        
+
+    }
+    100%{
+        opacity: 1;
+    }
+   
+  }

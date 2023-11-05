@@ -6,8 +6,7 @@ import socaialData from "../data/social.json";
 import navData from "../data/navbar.json";
 
 const Navbar = (props) => {
-  const [nav, setNav] = useState(false);
-  const handleClick = () => setNav(!nav);
+  const handleClick = () => props.setNav(!props.nav);
   return (
     <div
       className={`fixed w-full h-[70px] flex justify-between items-center px-4 ${props.light}  `}
@@ -49,18 +48,18 @@ const Navbar = (props) => {
       </ul>
       {/* Hamburger  */}
       <div onClick={handleClick} className="md:hidden z-10 cursor-pointer">
-        {!nav ? <FaBars /> : <FaTimes />}
+        {!props.nav ? <FaBars /> : <FaTimes />}
       </div>
       {/* Mobile Menu  */}
       <ul
         className={
-          !nav
+          !props.nav
             ? "hidden"
-            : "absolute top-0 left-0 w-full h-screen bg-[#0a192f] flex flex-col justify-center items-center "
+            : `absolute top-0 left-0 w-full h-screen ${props.light} flex flex-col justify-center items-center`
         }
       >
         {navData.map((navItem, index) => (
-          <li key={index} className="py-6 text-4xl">
+          <li key={index} className={`py-6 text-4xl ${props.light}`}>
             <Link
               onClick={handleClick}
               to={navItem.path}
@@ -71,10 +70,29 @@ const Navbar = (props) => {
             </Link>
           </li>
         ))}
+        <li>
+          <img
+            src="assets/sun.png"
+            alt="dark thema"
+            style={{ width: "40px" }}
+            onClick={props.changeColor}
+            className={`cursor-pointer  ${props.isActive ? "" : "hidden"}`}
+          />
+        </li>
+        <li>
+          <img
+            src="assets/soon.png"
+            onClick={props.changeColor}
+            className={`cursor-pointer  ${props.isActive ? "hidden" : ""}`}
+            alt="light thema"
+            style={{ width: "35px" }}
+          />
+        </li>
       </ul>
+
       {/* Social icons  */}
 
-      <div className="hidden sm:flex fixed flex-col top-[35%] left-0 w3-animate-left ">
+      <div className="hidden md:flex fixed flex-col top-[35%] left-0 w3-animate-left  ">
         <ul>
           {socaialData.map((socials, index) => (
             <li
