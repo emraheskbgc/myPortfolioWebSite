@@ -4,7 +4,8 @@ body {
   
   #load {
     position:absolute;
-    width:600px;
+    font-size: 30px;
+    width:900px;
     height:36px;
     left:50%;
     top:40%;

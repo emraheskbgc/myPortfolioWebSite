@@ -22,7 +22,9 @@ const Work = (props) => {
                 background: `url(${work.path})`,
                 backgroundSize: "cover",
               }}
-              className=" shadow-lg shadow-[#040c16] group container rounded-md flex  justify-center  items-center mx-auto   content-div  "
+              className={`shadow-lg shadow-[#040c16] group container rounded-md flex  justify-center  items-center mx-auto   content-div  ${
+                props.workAnimated ? "w3-animate-zoom" : ""
+              }`}
             >
               {/* HOVER EFFECTS  */}
               <div className="opacity-0 group-hover:opacity-100 text-centern">

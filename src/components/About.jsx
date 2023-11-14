@@ -4,10 +4,7 @@ import AboutData from "../data/about.json";
 const About = (props) => {
   return (
     <>
-      <div
-        name="about"
-        className={`w-full  ${props.light}   h-screen max-h-[200px] `}
-      >
+      <div name="about" className={`w-full  ${props.light}   h-screen  `}>
         {props.isAnimated ? (
           <div
             className={`flex flex-col justify-center items-center  h-full  ${

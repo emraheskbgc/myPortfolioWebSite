@@ -1,8 +1,5 @@
 .animate {
-    animation: anime 1.5s ease-in;
-    
-   
-    
+    animation: anime 1s ease-in;
   }
 .closeAnimated{
   animation: none;
@@ -17,4 +14,9 @@
         opacity: 1;
     }
    
+  }
+  
+  .zoomed {
+    
+    transform: scale(1.5); /* Büyüklüğü 1.5x artırır (zoom) */
   }
