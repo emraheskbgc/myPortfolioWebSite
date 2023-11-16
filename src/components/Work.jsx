@@ -3,14 +3,13 @@ import workData from "../data/work.json";
 
 const Work = (props) => {
   return (
-    <div name="work" className={`w-full ${props.light}`}>
+    <div name="work" className={`w-full ${props.light} h-screen`}>
       <div className="max-w-[1000px]  mx-auto  p-4 flex flex-col justify-center w-full h-full">
         {/* CAPTION  */}
         <div className="pb-8">
           <p className="text-4xl font-bold inline border-b-4 border-pink-600 ">
-            Work
+            Works
           </p>
-          <p className="py-6">// Check out some of my recent work</p>
         </div>
         {/* CONTAİNER  */}
         <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4 ">
@@ -27,7 +26,7 @@ const Work = (props) => {
               }`}
             >
               {/* HOVER EFFECTS  */}
-              <div className="opacity-0 group-hover:opacity-100 text-centern">
+              <div className="opacity-0 group-hover:opacity-100 text-center">
                 <span className="text-2xl font-bold  text-white tracking wider">
                   {work.name}
                 </span>

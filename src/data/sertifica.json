@@ -1,0 +1,35 @@
+[
+  {
+    "name": "Css Temelleri",
+    "path": "assets/sertificas/css.pdf"
+  },
+  {
+    "name": "HTML5",
+    "path": "assets/sertificas/html.pdf"
+  },
+  {
+    "name": "Frontend Base",
+    "path": "assets/sertificas/frontendBase.pdf"
+  },
+  {
+    "name": "React.js",
+    "path": "assets/sertificas/react.pdf"
+  },
+  {
+    "name": "Java",
+    "path": "assets/sertificas/java.pdf"
+  },
+
+  {
+    "name": "Web 101",
+    "path": "assets/sertificas/web101.pdf"
+  },
+  {
+    "name": "Web 201",
+    "path": "assets/sertificas/web201.pdf"
+  },
+  {
+    "name": "İş Analizi",
+    "path": "assets/sertificas/isAnaliz.pdf"
+  }
+]

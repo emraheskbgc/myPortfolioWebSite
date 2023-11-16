@@ -7,6 +7,7 @@ import Contact from "./components/Contact";
 import { useEffect, useState } from "react";
 import Load from "./load/Load";
 import Footer from "./components/Footer";
+import Sertificas from "./components/Sertificas";
 
 function App() {
   const [nav, setNav] = useState(false);
@@ -28,11 +29,12 @@ function App() {
   const [isAnimated, setIsAnimated] = useState(false);
   const [skillAnimated, setSkillAnimated] = useState(false);
   const [workAnimated, setWorkAnimated] = useState(false);
+  const [sertificaAnimated, setSertificaAnimated] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
       const scrollY = window.scrollY;
-      const threshold = 300; // about Animasyonun başlaması için kaydırma eşiği
+      const threshold = 500; // about Animasyonun başlaması için kaydırma eşiği
 
       if (scrollY > threshold) {
         setIsAnimated(true);
@@ -51,7 +53,7 @@ function App() {
   useEffect(() => {
     const handleScroll2 = () => {
       const scrollY = window.scrollY;
-      const threshold = 800; // about Animasyonun başlaması için kaydırma eşiği
+      const threshold = 1000; // about Animasyonun başlaması için kaydırma eşiği
 
       if (scrollY > threshold) {
         setSkillAnimated(true);
@@ -66,10 +68,11 @@ function App() {
       window.removeEventListener("scroll", handleScroll2);
     };
   }, []);
+
   useEffect(() => {
     const handleScroll3 = () => {
       const scrollY = window.scrollY;
-      const threshold = 1300; // about Animasyonun başlaması için kaydırma eşiği
+      const threshold = 1500; // about Animasyonun başlaması için kaydırma eşiği
 
       if (scrollY > threshold) {
         setWorkAnimated(true);
@@ -82,6 +85,24 @@ function App() {
 
     return () => {
       window.removeEventListener("scroll", handleScroll3);
+    };
+  }, []);
+  useEffect(() => {
+    const handleScroll4 = () => {
+      const scrollY = window.scrollY;
+      const threshold = 2200; // about Animasyonun başlaması için kaydırma eşiği
+
+      if (scrollY > threshold) {
+        setSertificaAnimated(true);
+      } else {
+        setSertificaAnimated(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll4);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll4);
     };
   }, []);
 
@@ -103,6 +124,7 @@ function App() {
         skillAnimated={skillAnimated}
       />
       <Work light={light} workAnimated={workAnimated} />
+      <Sertificas light={light} sertificaAnimated={sertificaAnimated} />
       <Contact light={light} isActive={isActive} />
       <Footer light={light} />
     </>

@@ -16,6 +16,10 @@
         "path":"work"
     },
     {
+        "name":"Sertifica",
+        "path":"sertifica"
+    },
+    {
         "name":"Contact",
         "path":"contact"
     }
