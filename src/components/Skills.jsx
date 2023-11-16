@@ -17,10 +17,8 @@ const Skills = (props) => {
             <div
               key={index}
               className={`shadow-md shadow-[#040c16] hover:scale-110 duration-500 pt-2  ${
-                props.isActive
-                  ? "bg-[#0a192f]"
-                  : "bg-orange-300 text-[#0a192f] "
-              } ${props.skillAnimated ? "w3-animate-zoom" : ""}`}
+                props.isActive ? "bg-[#0a192f]" : "bg-pink-200 text-[#0a192f] "
+              } ${props.skillAnimated ? "w3-animate-zoom" : ""} `}
             >
               <img src={image.path} className="w-20 mx-auto " alt="" />
               <p className="mt-4">{image.name}</p>

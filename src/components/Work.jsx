@@ -3,7 +3,7 @@ import workData from "../data/work.json";
 
 const Work = (props) => {
   return (
-    <div name="work" className={`w-full ${props.light} h-screen`}>
+    <div name="work" className={`w-full ${props.light} `}>
       <div className="max-w-[1000px]  mx-auto  p-4 flex flex-col justify-center w-full h-full">
         {/* CAPTION  */}
         <div className="pb-8">
