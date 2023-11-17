@@ -124,6 +124,7 @@ function App() {
         skillAnimated={skillAnimated}
       />
       <Work light={light} workAnimated={workAnimated} />
+
       <Sertificas light={light} sertificaAnimated={sertificaAnimated} />
       <Contact light={light} isActive={isActive} />
       <Footer light={light} />

@@ -1,35 +1,32 @@
 [
-    {
-    "name":"Tailwind Css Application",
-    "path":"assets/projects/work1.png",
-    "demoLink":"https://emrah-gega-project.netlify.app/",
-    "codeLink":"https://github.com/emraheskbgc/tailwind-gega-project"
-    },
-    {
-    "name":"Javascript Application",
-    "path":"assets/projects/work2.png",
-    "demoLink":"https://menu-kebap.netlify.app/",
-    "codeLink":"https://github.com/emraheskbgc/menu-app"
-    },
-    {
-        "name":"Responsive React Nav ",
-        "path":"assets/projects/work3.png",
-        "demoLink":"https://responsivenav-react.netlify.app/",
-        "codeLink":"https://github.com/emraheskbgc/responsiveNavProject"
-    },
-    {
-        "name":"Todo List ",
-        "path":"assets/projects/work4.png",
-        "demoLink":"https://todowithtailwind.netlify.app/",
-        "codeLink":"https://github.com/emraheskbgc/todoBaseWithReactAndTailwin"
-    }
-    ,
-    {
-        "name":"Calculator",
-        "path":"assets/projects/work5.png",
-        "demoLink":"https://reactcalculatorme.netlify.app/",
-        "codeLink":"https://github.com/emraheskbgc/calculatorWithReact"
-    }
-    
-
+  {
+    "name": "Tailwind Css Application",
+    "path": "assets/projects/work1.png",
+    "demoLink": "https://emrah-gega-project.netlify.app/",
+    "codeLink": "https://github.com/emraheskbgc/tailwind-gega-project"
+  },
+  {
+    "name": "Javascript Application",
+    "path": "assets/projects/work2.png",
+    "demoLink": "https://menu-kebap.netlify.app/",
+    "codeLink": "https://github.com/emraheskbgc/menu-app"
+  },
+  {
+    "name": "Responsive React Nav ",
+    "path": "assets/projects/work3.png",
+    "demoLink": "https://responsivenav-react.netlify.app/",
+    "codeLink": "https://github.com/emraheskbgc/responsiveNavProject"
+  },
+  {
+    "name": "Todo List ",
+    "path": "assets/projects/work4.png",
+    "demoLink": "https://todowithtailwind.netlify.app/",
+    "codeLink": "https://github.com/emraheskbgc/todoBaseWithReactAndTailwin"
+  },
+  {
+    "name": "Calculator",
+    "path": "assets/projects/work5.png",
+    "demoLink": "https://reactcalculatorme.netlify.app/",
+    "codeLink": "https://github.com/emraheskbgc/calculatorWithReact"
+  }
 ]

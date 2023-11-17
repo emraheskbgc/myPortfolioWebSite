@@ -1,9 +1,13 @@
-import React from "react";
+import React, { useState } from "react";
 import sertificaData from "../data/sertifica.json";
 
 const Sertificas = (props) => {
+  const [visibleItems, setVisibleItems] = useState(6);
+  const showMoreItems = () => {
+    setVisibleItems((prev) => prev + 6);
+  };
   return (
-    <div name="sertifica" className={`w-full ${props.light} `}>
+    <div name="sertifica" className={`w-full ${props.light} md:h-screen `}>
       <div className="max-w-[1000px]  mx-auto  p-4 flex flex-col justify-center w-full h-full">
         {/* CAPTION  */}
         <div className="pb-8">
@@ -13,7 +17,7 @@ const Sertificas = (props) => {
         </div>
         {/* CONTAİNER  */}
         <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4 ">
-          {sertificaData.map((sertifica, index) => (
+          {sertificaData.slice(0, visibleItems).map((sertifica, index) => (
             <div
               key={index}
               className={`shadow-xl shadow-[#040c16] group container rounded-tr-3xl rounded-bl-3xl flex  justify-center  items-center mx-auto   content-div  ${
@@ -39,6 +43,14 @@ const Sertificas = (props) => {
             </div>
           ))}
         </div>
+        {visibleItems < sertificaData.length && (
+          <button
+            onClick={showMoreItems}
+            className="mt-[40px] text-md hover:text-pink-600"
+          >
+            Show More
+          </button>
+        )}
       </div>
     </div>
   );

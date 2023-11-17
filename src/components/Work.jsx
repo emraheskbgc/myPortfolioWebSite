@@ -1,9 +1,13 @@
-import React from "react";
+import React, { useState } from "react";
 import workData from "../data/work.json";
 
 const Work = (props) => {
+  const [visibleItems, setVisibleItems] = useState(6);
+  const showMoreItems = () => {
+    setVisibleItems((prev) => prev + 6);
+  };
   return (
-    <div name="work" className={`w-full ${props.light} `}>
+    <div name="work" className={`w-full ${props.light} md:h-screen `}>
       <div className="max-w-[1000px]  mx-auto  p-4 flex flex-col justify-center w-full h-full">
         {/* CAPTION  */}
         <div className="pb-8">
@@ -14,7 +18,7 @@ const Work = (props) => {
         {/* CONTAİNER  */}
         <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4 ">
           {/* GRID ITEMS  */}
-          {workData.map((work, index) => (
+          {workData.slice(0, visibleItems).map((work, index) => (
             <div
               key={index}
               style={{
@@ -46,6 +50,14 @@ const Work = (props) => {
             </div>
           ))}
         </div>
+        {visibleItems < workData.length && (
+          <button
+            className="mt-[40px] text-md hover:text-pink-600"
+            onClick={showMoreItems}
+          >
+            Show More
+          </button>
+        )}
       </div>
     </div>
   );
