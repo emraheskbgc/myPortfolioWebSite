@@ -8,6 +8,7 @@ import { useEffect, useState } from "react";
 import Load from "./load/Load";
 import Footer from "./components/Footer";
 import Sertificas from "./components/Sertificas";
+import BgAnimation from "./components/BgAnimation";
 
 function App() {
   const [nav, setNav] = useState(false);
@@ -108,6 +109,7 @@ function App() {
 
   return (
     <>
+      <BgAnimation />
       <Navbar
         isActive={isActive}
         changeColor={changeColor}

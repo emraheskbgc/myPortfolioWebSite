@@ -45,68 +45,70 @@ const Contact = (props) => {
   };
 
   return (
-    <div
-      name="contact"
-      className={`w-full  flex justify-center items-center p-4 ${props.light}`}
-    >
-      <form
-        onSubmit={handleSubmit}
-        className="flex flex-col max-w-[600px] w-full"
+    <>
+      <div
+        name="contact"
+        className={`w-full  flex justify-center items-center p-4 ${props.light}`}
       >
-        <div className="h-[100px]"></div>
-        <div className="pb-8">
-          <p className="text-4xl font-bold inline border-b-4 border-pink-600">
-            Contact
-          </p>
-          <p className="py-4">
-            // Submit the form below or shoot me an email-{" "}
-            <span className="inline border-b-2 border-pink-600">
-              emraheskibagci595@gmail.com
-            </span>
-          </p>
-        </div>
-        <input
-          className={`p-2 shadow-xl  text-[#0a192f] ${bgForm} rounded-3xl`}
-          type="text"
-          placeholder="Name Surname"
-          value={name}
-          onChange={(e) => setName(e.target.value)}
-        />
-        <input
-          className={`p-2 my-4 shadow-xl  text-[#0a192f] ${bgForm} rounded-3xl`}
-          type="text"
-          placeholder="Email"
-          value={email}
-          onChange={(e) => setEmail(e.target.value)}
-        />
-        <textarea
-          className={`p-2 shadow-xl  text-[#0a192f] ${bgForm} rounded-[20px]`}
-          type="text"
-          cols="30"
-          rows="10"
-          placeholder="Message"
-          value={message}
-          onChange={(e) => setMessage(e.target.value)}
-        ></textarea>
+        <form
+          onSubmit={handleSubmit}
+          className="flex flex-col max-w-[600px] w-full"
+        >
+          <div className="h-[100px]"></div>
+          <div className="pb-8">
+            <p className="text-4xl font-bold inline border-b-4 border-pink-600">
+              Contact
+            </p>
+            <p className="py-4">
+              // Submit the form below or shoot me an email-{" "}
+              <span className="inline border-b-2 border-pink-600">
+                emraheskibagci595@gmail.com
+              </span>
+            </p>
+          </div>
+          <input
+            className={`p-2 shadow-xl  text-[#0a192f] ${bgForm} rounded-3xl`}
+            type="text"
+            placeholder="Name Surname"
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+          />
+          <input
+            className={`p-2 my-4 shadow-xl  text-[#0a192f] ${bgForm} rounded-3xl`}
+            type="text"
+            placeholder="Email"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+          />
+          <textarea
+            className={`p-2 shadow-xl  text-[#0a192f] ${bgForm} rounded-[20px]`}
+            type="text"
+            cols="30"
+            rows="10"
+            placeholder="Message"
+            value={message}
+            onChange={(e) => setMessage(e.target.value)}
+          ></textarea>
 
-        {showAlert ? (
-          <button
-            className={`border-2 alert alert-success bg-green-500 px-4 py-3 my-8 mx-auto flex items-center rounded `}
-            type="submit"
-          >
-            <strong className="pr-1"> Mesajınız Gönderilmiştir! </strong>
-            En kısa sürede dönüş yapılacaktır.
-          </button>
-        ) : (
-          <button
-            className={`border-2 hover:bg-pink-200 hover:border-pink-200 px-4 py-3 my-8 mx-auto flex items-center rounded ${bgButton}`}
-            type="submit"
-          >
-            Send
-          </button>
-        )}
-      </form>
-    </div>
+          {showAlert ? (
+            <button
+              className={`border-2 alert alert-success bg-green-500 px-4 py-3 my-8 mx-auto flex items-center rounded `}
+              type="submit"
+            >
+              <strong className="pr-1"> Mesajınız Gönderilmiştir! </strong>
+              En kısa sürede dönüş yapılacaktır.
+            </button>
+          ) : (
+            <button
+              className={`border-2 hover:bg-pink-200 hover:border-pink-200 px-4 py-3 my-8 mx-auto flex items-center rounded ${bgButton}`}
+              type="submit"
+            >
+              Send
+            </button>
+          )}
+        </form>
+      </div>
+    </>
   );
 };
 
