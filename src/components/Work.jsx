@@ -35,12 +35,12 @@ const Work = (props) => {
                   {work.name}
                 </span>
                 <div className="pt-8 text-center">
-                  <a href={work.demoLink} target="_blank">
+                  <a href={work.demoLink} target="_blank" rel="noreferrer">
                     <button className="text-center rounded-lg px-4 py-4 m-2 bg-white text-gray-700 font-bold text-lg">
                       Demo
                     </button>
                   </a>
-                  <a href={work.codeLink} target="_blank">
+                  <a href={work.codeLink} target="_blank" rel="noreferrer">
                     <button className="text-center rounded-lg px-4 py-4 m-2 bg-white text-gray-700 font-bold text-lg">
                       Code
                     </button>
