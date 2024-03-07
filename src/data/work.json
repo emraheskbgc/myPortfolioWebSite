@@ -1,12 +1,12 @@
 [
   {
-    "name": "Tailwind Css Application",
+    "name": "Tailwind Css App",
     "path": "assets/projects/work1.png",
     "demoLink": "https://emrah-gega-project.netlify.app/",
     "codeLink": "https://github.com/emraheskbgc/tailwind-gega-project"
   },
   {
-    "name": "Javascript Application",
+    "name": "Menu with JavaScript",
     "path": "assets/projects/work2.png",
     "demoLink": "https://menu-kebap.netlify.app/",
     "codeLink": "https://github.com/emraheskbgc/menu-app"
@@ -28,5 +28,35 @@
     "path": "assets/projects/work5.png",
     "demoLink": "https://reactcalculatorme.netlify.app/",
     "codeLink": "https://github.com/emraheskbgc/calculatorWithReact"
+  },
+  {
+    "name": "Chat App with Nextjs",
+    "path": "assets/projects/work6.png",
+    "demoLink": "https://ofistik-chat.netlify.app/",
+    "codeLink": "https://github.com/emraheskbgc/ofistik-chat-app"
+  },
+  {
+    "name": "Multi Lang App with Nextjs",
+    "path": "assets/projects/work7.png",
+    "demoLink": "https://multilanguage-tw.netlify.app/tr",
+    "codeLink": "https://github.com/emraheskbgc/multilang"
+  },
+  {
+    "name": "Animate Close Button",
+    "path": "assets/projects/work8.png",
+    "demoLink": "https://closemenubtn.netlify.app/",
+    "codeLink": "https://github.com/emraheskbgc/menuIconAnimation"
+  },
+  {
+    "name": "Insta Story App",
+    "path": "assets/projects/work9.png",
+    "demoLink": "https://avatar-story.netlify.app/",
+    "codeLink": "https://github.com/emraheskbgc/avatar-story"
+  },
+  {
+    "name": "Memory Game",
+    "path": "assets/projects/work10.png",
+    "demoLink": "https://memory-game-emrah.netlify.app/",
+    "codeLink": "https://github.com/emraheskbgc/memory-game-redux"
   }
 ]

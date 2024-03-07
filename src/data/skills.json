@@ -23,6 +23,11 @@
         "name":"TAILWIND",
         "path":"assets/tailwind.png"
     }
+    ,
+    {
+        "name":"NextJS",
+        "path":"assets/nextjs.png"
+    }
 
 ]
     
