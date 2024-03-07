@@ -32,7 +32,7 @@ const Sertificas = (props) => {
                   <a
                     href={sertifica.path}
                     download={sertifica.path}
-                    target="_blank"
+                    target="_blank" rel="noopener noreferrer"
                   >
                     <button className="text-center rounded-lg px-4 py-4 m-2  text-pink-600 font-bold text-lg">
                       <i className="fa fa-download"></i> Download

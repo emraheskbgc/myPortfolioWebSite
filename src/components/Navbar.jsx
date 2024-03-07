@@ -1,7 +1,6 @@
 import React from "react";
 import { Link } from "react-scroll";
-import { FaBars, FaTimes, FaGithub, FaLinkedin } from "react-icons/fa";
-import { useState } from "react";
+import { FaBars, FaTimes } from "react-icons/fa";
 import socaialData from "../data/social.json";
 import navData from "../data/navbar.json";
 
@@ -104,7 +103,7 @@ const Navbar = (props) => {
             >
               <a
                 href={socials.path}
-                target="_blank"
+                target="_blank" rel="noopener noreferrer"
                 className="flex items-center justify-between w-full font-bold text-gray-300"
               >
                 {socials.name}{" "}
