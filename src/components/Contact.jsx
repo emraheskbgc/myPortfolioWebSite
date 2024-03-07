@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import emailjs from "@emailjs/browser";
 const Contact = (props) => {
   const bgForm = `${
@@ -60,7 +60,7 @@ const Contact = (props) => {
               Contact
             </p>
             <p className="py-4">
-              // Submit the form below or shoot me an email-{" "}
+               Submit the form below or shoot me an email-{" "}
               <span className="inline border-b-2 border-pink-600">
                 emraheskibagci595@gmail.com
               </span>

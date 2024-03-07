@@ -5,7 +5,6 @@ import Skills from "./components/Skills";
 import Work from "./components/Work";
 import Contact from "./components/Contact";
 import { useEffect, useState } from "react";
-import Load from "./load/Load";
 import Footer from "./components/Footer";
 import Sertificas from "./components/Sertificas";
 import BgAnimation from "./components/BgAnimation";
@@ -20,12 +19,7 @@ function App() {
     isActive ? "bg-[#0a192f] text-gray-300" : "bg-gray-200 text-[#0a192f]"
   }`;
 
-  const [isLoading, setIsLoading] = useState(true);
-  useEffect(() => {
-    setTimeout(() => {
-      setIsLoading(false);
-    }, 1900);
-  }, []);
+  
 
   const [isAnimated, setIsAnimated] = useState(false);
   const [skillAnimated, setSkillAnimated] = useState(false);
@@ -136,27 +130,4 @@ function App() {
 
 export default App;
 
-// isLoading ? (
-//   <Load />
-// ) : (
-//   <>
-//     <Navbar
-//       isActive={isActive}
-//       changeColor={changeColor}
-//       light={light}
-//       nav={nav}
-//       setNav={setNav}
-//     />
-//     <Home isActive={isActive} light={light} />
-//     <About light={light} isAnimated={isAnimated} nav={nav} />
-//     <Skills
-//       isActive={isActive}
-//       light={light}
-//       nav={nav}
-//       skillAnimated={skillAnimated}
-//     />
-//     <Work light={light} workAnimated={workAnimated} />
-//     <Contact light={light} isActive={isActive} />
-//     <Footer light={light} />
-//   </>
-// );
+

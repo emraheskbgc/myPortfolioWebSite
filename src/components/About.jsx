@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import AboutData from "../data/about.json";
 
 const About = (props) => {
